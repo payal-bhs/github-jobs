@@ -1,0 +1,143 @@
+.max-width-container {
+    margin: 0 auto;
+    max-width: 73rem;
+}
+.job-details-container {
+    transform: translateY(-4.3rem);
+    padding: 0 2.4rem;
+}
+.company {
+    text-align: center;
+    border-radius: .6rem;
+    padding: 0 2.4rem 3.2rem;
+}
+.back-link {
+    align-items: center;
+    display: inline-flex;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+    color: black;
+    transform: translateY(-.6rem);
+}
+.company-logo {
+    width: 5rem;
+    height: 5rem;
+    overflow: hidden;
+    align-items: center;
+    display: inline-flex;
+    border-radius: 1.5rem;
+    justify-content: center;
+    background-color:white;
+}
+.company-logo img{
+    width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+.company-name-site {
+    margin-top: -.1rem;
+}
+.company-name {
+    margin-bottom: .9rem;
+    color: black;
+}
+.btn-company-site {
+    margin-top: 2.4rem;
+}
+.job-detail {
+    border-radius: .6rem;
+    background-color: white;
+    transition: var(--transition) white;
+}
+.job-detail-heading {
+    display: flex;
+    flex-flow: column nowrap;
+}
+.job-detail-timetype {
+    display: flex;
+    margin-top: -.1rem;
+    align-items: center;   
+}
+.job-detail-title {
+    margin: .8rem 0;
+    color: black;
+    transition: var(--transition) black;
+}
+.spacer-dot {
+    width: .4rem;
+    height: .4rem;
+    margin: 0 1.2rem;
+    border-radius: 50%;
+    background-color: #6e8098;
+}
+.job-detail-description{
+    margin-top: 3.2rem;
+}
+.job-info-short {
+    margin-top: -.3rem;
+    padding: 2.5rem 2.4rem 2.3rem;
+}
+.back-link {
+    visibility: hidden;
+}
+.job-info-short-container {
+    margin: 0 auto;
+    max-width: 73rem;
+    text-align: center;
+}
+.job-info-short-title-company {
+    display: none;
+}
+
+.job-info-short-title {
+    margin-bottom: .8rem;
+}
+@media (min-width: 737px) {
+    .company{
+        padding: 0;
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+    .company-logo {
+        transform: translateY(0);
+        width: 14rem;
+        height: 100%;
+        border-radius: .6rem 0 0 .6rem;
+    }
+    .company-name-site {
+        margin: 4.2rem 4rem;
+    }
+    .company-name {
+        margin-bottom: 0.8rem;
+    }
+    .btn-company-site {
+        margin-top: 0;
+        margin-left: auto;
+        margin-right: 4rem;
+    }
+    .job-info-short-container {
+        display: flex;
+        text-align: left;
+        align-items: center;
+    }
+    .job-info-short-title-company {
+        display: flex;
+        margin-right: 2rem;
+        flex-flow: column nowrap;
+    }
+}
+@media (min-width: 768px) {
+    .job-details-container {
+        padding: 0 4rem 0 3.9rem;
+        transform: translateY(-6rem);
+    }
+    .job-info-short {
+        padding: 2.3rem 4rem 2.2rem 3.9rem;
+    }
+}
+@media (min-width: 1024px) {
+    .job-details-container {
+        transform: translateY(-7rem);
+    }
+}
