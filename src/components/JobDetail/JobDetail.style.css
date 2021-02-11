@@ -101,7 +101,8 @@
     }
     .company-logo {
         transform: translateY(0);
-        width: 14rem;
+        /* width: 14rem; */
+        width: 30rem;
         height: 100%;
         border-radius: .6rem 0 0 .6rem;
     }
@@ -130,7 +131,7 @@
 @media (min-width: 768px) {
     .job-details-container {
         padding: 0 4rem 0 3.9rem;
-        transform: translateY(-6rem);
+        transform: translateY(-3rem);
     }
     .job-info-short {
         padding: 2.3rem 4rem 2.2rem 3.9rem;
@@ -138,6 +139,6 @@
 }
 @media (min-width: 1024px) {
     .job-details-container {
-        transform: translateY(-7rem);
+        transform: translateY(-5rem);
     }
 }

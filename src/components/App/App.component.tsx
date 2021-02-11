@@ -14,13 +14,13 @@ import {
 const App = () => {
     return (
         <Container className="my-4 main-component">
-            <Heading />
             <main className="main-container">
                 <Router>
                     <Switch>
                         <Route exact path="/" render={() => {
                             return (
                                 <>
+                                    <Heading />
                                     <JobFilter />
                                     <JobPagination />
                                     <JobList />

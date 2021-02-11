@@ -46,10 +46,8 @@ export const JobDetail = (props: JobDetailComponentProps) => {
                                     <img src={job.company_logo} alt="company logo" />
                                 </div>
                                 <div className="company-name-site">
-                                    <h2 className="company-name">{job.company}</h2>
-                                    {/* <p className="t-light-gray t-body">{getDomain(job.company_url)}</p> */}
+                                    {/* <h2 className="company-name">{job.company}</h2> */}
                                 </div>
-                                <a className="btn btn-company-site" href={job.company_url} rel="noreferrer" target="_blank">Company Site</a>
                             </section>
                             <section className="job-detail">
                                 <div className="job-detail-heading">
@@ -66,6 +64,9 @@ export const JobDetail = (props: JobDetailComponentProps) => {
                                         <p className="job-detail-type">{job.type}</p>
                                     </div>
                                     <h1 className="job-detail-title t-h1">{job.title}</h1>
+                                    <a href={job.company_url} rel="noreferrer" target="_blank">
+                                        <p className="company-name">{job.company}</p>
+                                    </a>
                                     <p className="t-location t-violet">{job.location}</p>
                                 </div>
                                 <div className="job-detail-description">{job.description}</div>
